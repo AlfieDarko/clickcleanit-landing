@@ -25,7 +25,10 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <title>ClickCleanIt</title>
+          <link
+            href="https://fonts.googleapis.com/css?family=Heebo|Open+Sans:600|Roboto:500|Work+Sans:600"
+            rel="stylesheet"
+          />
           <link href="/static/style.css" rel="stylesheet" />
           {this.props.styleTags}
         </Head>

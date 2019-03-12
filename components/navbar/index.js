@@ -1,5 +1,5 @@
 import React from "react";
-import { NavBarContainer, NavItem } from "./styled";
+import { NavBarContainer, NavItem, CTAbtn } from "./styled";
 const NavBar = () => {
   return (
     <>
@@ -7,8 +7,9 @@ const NavBar = () => {
         <NavItem>Home</NavItem>
         <NavItem>Services</NavItem>
         <NavItem>FAQ's</NavItem>
-        <NavItem>Commercial</NavItem>
-        <NavItem>Book Now!</NavItem>
+        <NavItem>
+          <CTAbtn>Book Now!</CTAbtn>
+        </NavItem>
       </NavBarContainer>
     </>
   );
