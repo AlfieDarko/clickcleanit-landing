@@ -4,6 +4,7 @@ export const NavBarContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   margin-right: 8rem;
+  align-items: center;
 `;
 export const NavItem = styled.div`
   margin: 3rem;
@@ -12,10 +13,12 @@ export const NavItem = styled.div`
 `;
 
 export const CTAbtn = styled.div`
+  color: #fff;
   display: inline-block;
   font-display: inherit;
-  background-color: white;
-  /* margin: 1em; */
-  border-radius: 0.25rem;
-  border: 2px solid lightblue;
+  background-color: #4286f4;
+  padding: 0.5em 1.3em 0.5em 1.3em;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  /* border: 2px solid #4286f4; */
 `;

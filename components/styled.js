@@ -9,3 +9,7 @@ export const TitleContainer = styled.div`
 export const HeaderStyled = styled.div`
   font-size: 60px;
 `;
+
+// export const Title = styled.h1`
+//   font
+// `
