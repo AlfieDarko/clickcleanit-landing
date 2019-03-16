@@ -7,23 +7,36 @@ import {
   IconCopyItem
 } from "./styled";
 import { Icon } from "semantic-ui-react";
+import { Calendar, Coffee, Smile } from "react-feather";
 const ThirdHero = () => {
   return (
     <Container>
       <IconBlockWrapper>
-        <IconItem>[[Insert Icon]]</IconItem>
-        <IconHeadlineItem>[[Insert Headline]]</IconHeadlineItem>
-        <IconCopyItem>[[Insert Copy]]</IconCopyItem>
+        <IconItem>
+          <img src="../../static/010-event.png" />
+        </IconItem>
+        <IconHeadlineItem>Book</IconHeadlineItem>
+        <IconCopyItem>
+          Select the date and time you’d like your professional to show up.
+        </IconCopyItem>
       </IconBlockWrapper>
       <IconBlockWrapper>
-        <IconItem>[[Insert Icon]]</IconItem>
-        <IconHeadlineItem>[[Insert Headline]]</IconHeadlineItem>
-        <IconCopyItem>[[Insert Copy]]</IconCopyItem>
+        <IconItem>
+          <img src="../../static/images/003-broom.png" />
+        </IconItem>
+        <IconHeadlineItem>Clean</IconHeadlineItem>
+        <IconCopyItem>
+          A certified cleaner comes over and cleans your place.
+        </IconCopyItem>
       </IconBlockWrapper>
       <IconBlockWrapper>
-        <IconItem>[[Insert Icon]]</IconItem>
-        <IconHeadlineItem>[[Insert Headline]]</IconHeadlineItem>
-        <IconCopyItem>[[Insert Copy]]</IconCopyItem>
+        <IconItem>
+          <img src="../../static/042-winner.png" />
+        </IconItem>
+        <IconHeadlineItem>Freedom</IconHeadlineItem>
+        <IconCopyItem>
+          Sit back and relax. Enjoy your sparkling home!
+        </IconCopyItem>
       </IconBlockWrapper>
     </Container>
   );

@@ -4,9 +4,14 @@ const SecondHero = () => {
   return (
     <Container>
       <TitleItem>
-        Why Choose <br />ClickCleanIt?
+        Why Choose <br />
+        ClickCleanIt?
       </TitleItem>
-      <ParagraphItem>[[Insert Sales Copy Here]]</ParagraphItem>
+      <ParagraphItem>
+        We understand that a clean home says so much about someone. <br />
+        That's we are dedicated to giving you the cleanest home possible so you
+        can relax and concentrate on the more important things in life.
+      </ParagraphItem>
     </Container>
   );
 };

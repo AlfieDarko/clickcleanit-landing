@@ -12,8 +12,8 @@ export const HeroTitleItem = styled.div`
 `;
 
 export const HeroFormItem = styled.div`
-  margin-top: 8rem;
-  margin-bottom: 10rem;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
   /* border: 1px solid black; */
 `;
 

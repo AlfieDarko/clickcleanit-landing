@@ -13,7 +13,7 @@ const ForthHero = () => {
   return (
     <>
       <Container>
-        <TitleItem>Title</TitleItem>
+        <TitleItem>Your Home & Your Home Are Our Priorities</TitleItem>
       </Container>
       <Container>
         <TitleItem>Title</TitleItem>

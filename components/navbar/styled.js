@@ -3,8 +3,10 @@ import styled from "styled-components";
 export const NavBarContainer = styled.div`
   display: flex;
   justify-content: flex-end;
-  margin-right: 8rem;
+  padding-right: 8rem;
   align-items: center;
+  background-color: #f7f9f9;
+  color: #2e4057;
 `;
 export const NavItem = styled.div`
   margin: 3rem;

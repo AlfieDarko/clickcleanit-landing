@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   justify-content: space-evenly;
+  background-color: #f7f9f9;
+  color: #2e4057;
 `;
 
 export const TitleItem = styled.div`
@@ -12,17 +14,33 @@ export const TitleItem = styled.div`
 export const IconBlockWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.025);
+  width: 25%;
 `;
 export const ParagraphItem = styled.div``;
 
 export const IconItem = styled.div`
-  margin: 4rem;
+  display: flex;
+  justify-content: center;
+  img {
+    align-self: end;
+    display: block;
+    max-width: 60%;
+    max-height: 60%;
+  }
+  /* margin: 4rem; */
 `;
 
 export const IconHeadlineItem = styled.div`
+  align-self: center;
+  font-size: 4rem;
   margin: 4rem;
 `;
 
 export const IconCopyItem = styled.div`
+  align-self: center;
+  font-size: 2.2rem;
   margin: 4rem;
 `;

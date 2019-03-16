@@ -9,7 +9,10 @@ const BookingForm = () => {
       <HeroFormItem>
         <DropdownSelector placeholder={"Bedrooms"} options={bedroomOptions} />
         <DropdownSelector placeholder={"Bathrooms"} options={bathroomOptions} />
-        <DropdownSelector placeholder={"Standard"} options={cleaningType} />
+        <DropdownSelector
+          placeholder={"Type Of Clean"}
+          options={cleaningType}
+        />
         <HeroCTAbtn>See Price & Book!</HeroCTAbtn>
       </HeroFormItem>
     </div>

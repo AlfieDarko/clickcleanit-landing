@@ -3,6 +3,11 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   justify-content: space-evenly;
+  padding-top: 4rem;
+
+  background: #7b9a9a;
+
+  color: #d7e1e1;
 `;
 
 export const TitleItem = styled.div`
