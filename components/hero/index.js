@@ -10,11 +10,13 @@ import {
   OfferBoxRow,
   OuterContainer,
   YoutubeContainer,
-  YoutubePanel
+  YoutubePanel,
+  OfferBoxOffer
 } from "./styled";
+
 import BookingForm from "../hero-booking-form/index";
-import UserForm from "../hero-booking-form/userform";
 import YouTubePlayer from "./youtube";
+
 const Hero = () => {
   return (
     <>
@@ -32,12 +34,15 @@ const Hero = () => {
               </OfferBoxContent>
               <OfferBoxContent>
                 <OfferBox>Monthly</OfferBox>
-              </OfferBoxContent>
-              <OfferBoxContent>
-                <OfferBox>Weekly</OfferBox>
+                <OfferBoxOffer>5% Off!</OfferBoxOffer>
               </OfferBoxContent>
               <OfferBoxContent>
                 <OfferBox>Bi-weekly</OfferBox>
+                <OfferBoxOffer>10% Off</OfferBoxOffer>
+              </OfferBoxContent>
+              <OfferBoxContent>
+                <OfferBox>Weekly</OfferBox>
+                <OfferBoxOffer>15% Off</OfferBoxOffer>
               </OfferBoxContent>
             </OfferBoxRow>
             <HeroFormItem>

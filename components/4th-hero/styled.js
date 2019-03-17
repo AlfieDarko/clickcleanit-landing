@@ -1,33 +1,28 @@
 import styled from "styled-components";
 
+// background: #7b9a9a;
+// color: #d7e1e1;
+
 export const Container = styled.div`
   display: flex;
-  justify-content: space-evenly;
-  padding-top: 4rem;
-
+  padding: 5rem;
   background: #7b9a9a;
-
   color: #d7e1e1;
-`;
-
-export const TitleItem = styled.div`
-  margin: 4rem;
-`;
-
-export const IconBlockWrapper = styled.div`
-  display: flex;
+  justify-content: center;
   flex-direction: column;
-`;
-export const ParagraphItem = styled.div``;
-
-export const IconItem = styled.div`
-  margin: 4rem;
+  align-content: center;
 `;
 
-export const IconHeadlineItem = styled.div`
-  margin: 4rem;
+export const TitleContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+export const Title = styled.div`
+  justify-content: center;
+  font-size: 4rem;
 `;
 
-export const IconCopyItem = styled.div`
-  margin: 4rem;
+export const ContentContainer = styled.div`
+  justify-content: space-around;
+  display: flex;
 `;

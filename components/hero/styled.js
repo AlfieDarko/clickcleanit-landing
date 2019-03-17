@@ -73,6 +73,14 @@ export const OfferBox = styled.span`
 export const OfferBoxContent = styled.div`
   margin: 2rem;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const OfferBoxOffer = styled.div`
+  background: white;
+  padding: 0;
+  align-self: center;
 `;
 
 export const OfferBoxRow = styled.div`

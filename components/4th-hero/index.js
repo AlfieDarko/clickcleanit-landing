@@ -1,29 +1,35 @@
 import React from "react";
 import { Icon } from "semantic-ui-react";
 
-import {
-  Container,
-  IconBlockWrapper,
-  IconItem,
-  IconHeadlineItem,
-  IconCopyItem,
-  TitleItem
-} from "./styled";
+import { Container, Title, ContentContainer, TitleContainer } from "./styled";
 const ForthHero = () => {
   return (
-    <>
-      <Container>
-        <TitleItem>Your Home & Your Home Are Our Priorities</TitleItem>
-      </Container>
-      <Container>
-        <TitleItem>Title</TitleItem>
-        <TitleItem>Title</TitleItem>
-      </Container>
-      <Container>
-        <TitleItem>Title</TitleItem>
-        <TitleItem>Title</TitleItem>
-      </Container>
-    </>
+    <Container>
+      <TitleContainer>
+        <Title>
+          <span>Your Home Is Our Priority</span>
+        </Title>
+      </TitleContainer>
+
+      <ContentContainer>
+        <div>
+          <div>
+            <div>Icon</div> <div>Paragraph</div>
+          </div>
+          <div>
+            <div>Icon</div> <div>Paragraph</div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>Icon</div> <div>Paragraph</div>
+          </div>
+          <div>
+            <div>Icon</div> <div>Paragraph</div>
+          </div>
+        </div>
+      </ContentContainer>
+    </Container>
   );
 };
 

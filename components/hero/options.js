@@ -55,7 +55,7 @@ export const bathroomOptions = [
 export const cleaningType = [
   {
     text: "Domestic (p/h)",
-    value: "standard"
+    value: "domestic"
   },
   {
     text: "Deep Clean (p/h)",

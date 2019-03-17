@@ -5,6 +5,8 @@ export const Container = styled.div`
   justify-content: space-evenly;
   background-color: #f7f9f9;
   color: #2e4057;
+  padding: 8rem;
+  flex-direction: column;
 `;
 
 export const TitleItem = styled.div`
@@ -43,4 +45,20 @@ export const IconCopyItem = styled.div`
   align-self: center;
   font-size: 2.2rem;
   margin: 4rem;
+`;
+
+export const Title = styled.div`
+  padding: 6rem;
+  display: flex;
+  align-self: center;
+
+  span {
+    font-weight: bold;
+    font-size: 5rem;
+  }
+`;
+
+export const CardWrapper = styled.div`
+  display: flex;
+  justify-content: space-around;
 `;
