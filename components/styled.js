@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Container, Header, Grid, Image } from "semantic-ui-react";
 
 export const TitleContainer = styled.div`
   margin-top: 30px;

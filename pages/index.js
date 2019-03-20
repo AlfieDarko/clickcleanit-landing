@@ -12,7 +12,7 @@ const Index = () => (
   <div>
     <NavBar />
     <Hero />
-    <SocialProof />
+    {/* <SocialProof /> */}
     <ThirdHero />
     <SecondHero />
     <ForthHero />

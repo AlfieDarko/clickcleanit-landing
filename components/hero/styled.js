@@ -4,11 +4,12 @@ export const OuterContainer = styled.div`
   display: flex;
   justify-content: center;
   border-radius: 1rem;
+  margin-bottom: 5rem;
 `;
 
 export const Container = styled.div`
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.025);
-  background-color: white;
+  /* box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.025); */
+  background-color: #008DB9;
 
   display: flex;
   flex-direction: row;
@@ -16,6 +17,13 @@ export const Container = styled.div`
   /* background-color: #f7f9f9; */
   color: #2e4057;
   justify-content: center;
+  clip-path: polygon(100% -100%, 100% 82.26%, 0% 100%, 0% -17.38%);
+    /* RIGHTWARDS = > TO 100 */
+  /* DOWNWARDS  TO 100 */
+  z-index: 0;
+  align-items: baseline;
+  /* height: 70vh; */
+
 `;
 
 export const HeroTitleItem = styled.div`
@@ -23,9 +31,12 @@ export const HeroTitleItem = styled.div`
   align-self: center;
   font-weight: bold;
   margin-top: 2rem;
+  color: white;
 `;
 
 export const HeroFormItem = styled.div`
+    position: relative; /* Allows z-index to take affect */
+    z-index: 2; /* Stacks it above the clipped layer, which has no position nor z-index and is at z-index 1 */
   /* margin-top: 8rem; */
   /* margin-bottom: 20rem; */
   /* border: 1px solid black; */
@@ -41,7 +52,7 @@ export const HeroCTAbtn = styled.div`
   padding: 1.1rem;
   display: inline;
   border-radius: 0 20px 20px 0;
-  background-color: #4286f4;
+  background-color: #FF4C40;
   color: #fff;
 `;
 
@@ -50,37 +61,38 @@ export const HeroStyled = styled.div`
 `;
 
 export const Panel = styled.div`
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  padding: 3rem 7rem 2rem 7rem;
+  padding: 1rem 7rem 2rem 7rem;
   border-radius: 1rem;
 `;
 
 export const HeroSubTitle = styled.div`
   align-self: center;
   font-size: 1.9rem;
+  color: white;
+  padding-bottom: 4rem;
 `;
 
 export const OfferBox = styled.span`
   border-radius: 1rem;
-  color: #2e4057;
-  background-color: #bed8d4;
+  color: #fff;
+  /* background-color: #2e4057; */
   font-size: 1.6rem;
   padding: 2.7rem;
+  border: 2px solid #fff;
 `;
 
 export const OfferBoxContent = styled.div`
-  margin: 2rem;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
 `;
 
 export const OfferBoxOffer = styled.div`
-  background: white;
   padding: 0;
   align-self: center;
+  color: white;
 `;
 
 export const OfferBoxRow = styled.div`
@@ -88,6 +100,7 @@ export const OfferBoxRow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  justify-content: space-between;
 `;
 
 export const YoutubeContainer = styled.div``;
@@ -99,4 +112,5 @@ export const YoutubePanel = styled.div`
   padding: 3rem 7rem 2rem 7rem;
   border-radius: 1rem;
   justify-content: center;
+  z-index: 1;
 `;

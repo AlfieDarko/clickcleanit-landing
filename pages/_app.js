@@ -2,7 +2,16 @@
 import App, { Container } from "next/app";
 import Head from "next/head";
 import React from "react";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faClock,
+  faClipboardCheck,
+  faHandshake,
+  faComment
+} from "@fortawesome/free-solid-svg-icons";
 
+library.add(faClock, faClipboardCheck, faHandshake, faComment);
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = {};

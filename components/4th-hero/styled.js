@@ -26,3 +26,14 @@ export const ContentContainer = styled.div`
   justify-content: space-around;
   display: flex;
 `;
+
+export const ContentCard = styled.div`
+  width: 20%
+`
+
+export const ContentColumn = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+`
