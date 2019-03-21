@@ -21,7 +21,7 @@ export const HeroCTAbtn = styled.div`
   padding: 1.1rem;
   display: inline;
   border-radius: 0 20px 20px 0;
-  background-color: #4286f4;
+  background-color: #FF4C40;
   color: #fff;
 `;
 

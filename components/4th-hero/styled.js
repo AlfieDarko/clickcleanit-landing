@@ -11,7 +11,7 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   align-content: center;
-`;
+  padding: 8rem 20rem 8rem 20rem;`;
 
 export const TitleContainer = styled.div`
   display: flex;

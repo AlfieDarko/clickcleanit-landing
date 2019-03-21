@@ -15,19 +15,20 @@ export const Container = styled.div`
   flex-direction: row;
   align-items: center;
   /* background-color: #f7f9f9; */
-  color: #2e4057;
+  color: #007599;
   justify-content: center;
   clip-path: polygon(100% -100%, 100% 82.26%, 0% 100%, 0% -17.38%);
     /* RIGHTWARDS = > TO 100 */
   /* DOWNWARDS  TO 100 */
   z-index: 0;
   align-items: baseline;
-  /* height: 70vh; */
+  height: 75vh;
+  padding: 0 20rem;
 
 `;
 
 export const HeroTitleItem = styled.div`
-  font-size: 6rem;
+  font-size: 4rem;
   align-self: center;
   font-weight: bold;
   margin-top: 2rem;
@@ -70,7 +71,7 @@ export const Panel = styled.div`
 
 export const HeroSubTitle = styled.div`
   align-self: center;
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   color: white;
   padding-bottom: 4rem;
 `;

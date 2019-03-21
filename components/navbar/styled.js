@@ -7,6 +7,8 @@ export const NavBarContainer = styled.div`
   align-items: center;
   background-color: #008DB9;
   color: #fff;
+  padding: 0 20rem;
+
 `;
 export const NavItem = styled.div`
   margin: 2rem;

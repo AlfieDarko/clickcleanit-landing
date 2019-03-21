@@ -3,11 +3,12 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   justify-content: space-evenly;
-  background-color: #f7f9f9;
-  color: #2e4057;
+  background-color: white;
+  color: #007599;
   padding: 8rem;
   flex-direction: column;
-`;
+  padding:  0 20rem 8rem 20rem
+  `;
 
 export const TitleItem = styled.div`
   margin: 4rem;
@@ -37,13 +38,13 @@ export const IconItem = styled.div`
 
 export const IconHeadlineItem = styled.div`
   align-self: center;
-  font-size: 4rem;
+  font-size: 3.2rem;
   margin: 4rem;
 `;
 
 export const IconCopyItem = styled.div`
   align-self: center;
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   margin: 4rem;
 `;
 
@@ -54,7 +55,8 @@ export const Title = styled.div`
 
   span {
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 3.2rem;
+    color: #007599;
   }
 `;
 
