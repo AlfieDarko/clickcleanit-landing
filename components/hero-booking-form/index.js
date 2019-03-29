@@ -4,10 +4,18 @@ import DropdownSelector from "./selection/index";
 import { bathroomOptions, bedroomOptions, cleaningType } from "./options";
 const BookingForm = () => {
   return (
-    <div>
+    <>
       <HeroFormItem>
-        <DropdownSelector placeholder={"Bedrooms"} options={bedroomOptions} compact/>
-        <DropdownSelector placeholder={"Bathrooms"} options={bathroomOptions} compact />
+        <DropdownSelector
+          placeholder={"Bedrooms"}
+          options={bedroomOptions}
+          compact
+        />
+        <DropdownSelector
+          placeholder={"Bathrooms"}
+          options={bathroomOptions}
+          compact
+        />
         <DropdownSelector
           placeholder={"Type Of Clean"}
           options={cleaningType}
@@ -15,7 +23,7 @@ const BookingForm = () => {
         />
         <HeroCTAbtn>See Price & Book!</HeroCTAbtn>
       </HeroFormItem>
-    </div>
+    </>
   );
 };
 

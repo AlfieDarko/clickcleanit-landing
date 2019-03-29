@@ -5,12 +5,12 @@ const SocialProof = () => {
   return (
     <>
       <Container>
-        <ProofCol>
+        {/* <ProofCol>
           <ProofText>Tried & Tested</ProofText>
           <ProofLogo>
             We have helped hundreds get the clean home they deserve.
           </ProofLogo>
-        </ProofCol>
+        </ProofCol> */}
 
         <ProofCol>
           <ProofText>
@@ -25,12 +25,12 @@ const SocialProof = () => {
           </ProofLogo>
         </ProofCol>
 
-        <ProofCol>
+        {/* <ProofCol>
           <ProofText>
             "My firm counts the ClickCleanIt guys as their own team members!"
           </ProofText>
           <ProofLogo>- Moley Robotics</ProofLogo>
-        </ProofCol>
+        </ProofCol> */}
       </Container>
     </>
   );

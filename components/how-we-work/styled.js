@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { spacing, font, color } from "../designSystem";
 
 export const Container = styled.div`
   display: flex;
@@ -7,11 +8,11 @@ export const Container = styled.div`
   color: #007599;
   padding: 8rem;
   flex-direction: column;
-  padding:  0 20rem 8rem 20rem
-  `;
+  padding: 0 20rem 8rem 20rem;
+`;
 
 export const TitleItem = styled.div`
-  margin: 4rem;
+  margin: ${spacing.M}rem;
 `;
 
 export const IconBlockWrapper = styled.div`
@@ -21,6 +22,8 @@ export const IconBlockWrapper = styled.div`
   border-radius: 1rem;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.025);
   width: 25%;
+  background: #007599;
+  color: white;
 `;
 export const ParagraphItem = styled.div``;
 
@@ -28,34 +31,37 @@ export const IconItem = styled.div`
   display: flex;
   justify-content: center;
   img {
+    border-radius: 1rem;
     align-self: end;
     display: block;
-    max-width: 60%;
-    max-height: 60%;
+    max-width: 100%;
   }
   /* margin: 4rem; */
 `;
 
 export const IconHeadlineItem = styled.div`
   align-self: center;
-  font-size: 3.2rem;
-  margin: 4rem;
+  font-size: ${font.XL}rem;
+  margin: ${spacing.S}rem ${spacing.S}rem 0 ${spacing.S}rem;
 `;
 
 export const IconCopyItem = styled.div`
   align-self: center;
-  font-size: 1.6rem;
-  margin: 4rem;
+  font-size: ${font.M}rem;
+  margin: ${spacing.M}rem;
+  color: white;
 `;
 
 export const Title = styled.div`
-  padding: 6rem;
+  padding: ${spacing.L}rem;
   display: flex;
+  flex-direction: column;
   align-self: center;
 
-  span {
-    font-weight: bold;
-    font-size: 3.2rem;
+  div:nth-of-type(1) {
+    /* font-weight: bold; */
+    display: block;
+    font-size: ${font.XXL}rem;
     color: #007599;
   }
 `;
@@ -63,4 +69,24 @@ export const Title = styled.div`
 export const CardWrapper = styled.div`
   display: flex;
   justify-content: space-around;
+`;
+
+export const SubTitle = styled.div`
+  align-self: center;
+`;
+
+export const TitleContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const CTAContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: ${spacing.L}rem;
+  text-align: center;
+  div {
+    align-self: center;
+  }
 `;

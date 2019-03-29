@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { spacing, font, color } from "../designSystem";
 
 export const Container = styled.div`
-  padding: 3rem 9rem 5rem 9rem;
+  padding: ${spacing.M}rem ${spacing.XL}rem ${spacing.L}rem ${spacing.XL}rem;
 
   display: flex;
   justify-content: space-between;
@@ -17,19 +18,19 @@ export const RightContainer = styled.div`
 `;
 
 export const SocIcon = styled.div`
-  padding: 8rem 2rem 0 2rem;
+  padding: ${spacing.XL}rem ${spacing.S}rem 0 ${spacing.S}rem;
 `;
 
 export const ItemColumn = styled.div`
-  padding: 8rem;
+  padding: ${spacing.XL}rem;
 `;
 
 export const ColTitle = styled.div`
   font-weight: bold;
-  padding-bottom: 3rem;
-  font-size: 2rem;
+  padding-bottom: ${spacing.M}rem;
+  font-size: ${font.L}rem;
 `;
 
 export const ColLink = styled.div`
-  font-size: 1.6rem;
+  font-size: ${font.M}rem;
 `;

@@ -21,7 +21,6 @@ const Hero = () => {
   return (
     <>
       <Container>
-
         <OuterContainer>
           <Panel>
             <HeroTitleItem>We Clean. You Relax</HeroTitleItem>
@@ -51,11 +50,10 @@ const Hero = () => {
             </HeroFormItem>
           </Panel>
           <YoutubePanel>
-            <YouTubePlayer />
+            <img src="/static/clipart/AUG_WET_FLOOR_04_EEZY.png" />
           </YoutubePanel>
         </OuterContainer>
       </Container>
-
     </>
   );
 };

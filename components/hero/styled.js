@@ -1,46 +1,51 @@
 import styled from "styled-components";
+import { spacing, font, color } from "../designSystem";
 
 export const OuterContainer = styled.div`
   display: flex;
   justify-content: center;
   border-radius: 1rem;
-  margin-bottom: 5rem;
+  margin-bottom: ${spacing.M}rem;
 `;
 
 export const Container = styled.div`
-  /* box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.025); */
-  background-color: #008DB9;
-
+  background-color: ${color.primaryCol};
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* background-color: #f7f9f9; */
-  color: #007599;
+  color: ${color.primaryDarkerCol};
   justify-content: center;
   clip-path: polygon(100% -100%, 100% 82.26%, 0% 100%, 0% -17.38%);
-    /* RIGHTWARDS = > TO 100 */
+  /* RIGHTWARDS = > TO 100 */
   /* DOWNWARDS  TO 100 */
   z-index: 0;
   align-items: baseline;
   height: 75vh;
-  padding: 0 20rem;
-
+  padding: 0 ${spacing.XXXL};
 `;
 
 export const HeroTitleItem = styled.div`
-  font-size: 4rem;
+  font-size: ${font.XXL}rem;
   align-self: center;
   font-weight: bold;
-  margin-top: 2rem;
+  margin-top: ${spacing.S}rem;
   color: white;
 `;
 
 export const HeroFormItem = styled.div`
-    position: relative; /* Allows z-index to take affect */
-    z-index: 2; /* Stacks it above the clipped layer, which has no position nor z-index and is at z-index 1 */
+  position: relative; /* Allows z-index to take affect */
+  z-index: 2; /* Stacks it above the clipped layer, which has no position nor z-index and is at z-index 1 */
   /* margin-top: 8rem; */
   /* margin-bottom: 20rem; */
   /* border: 1px solid black; */
+  div {
+    justify-content: center;
+    display: flex;
+  }
+`;
+
+export const HeroStyled = styled.div`
+  /* margin-bottom: 10rem; */
 `;
 
 export const HeroDropdown = styled.div``;
@@ -50,39 +55,41 @@ export const DropBtn = styled.button``;
 export const DropDownContent = styled.div``;
 
 export const HeroCTAbtn = styled.div`
-  padding: 1.1rem;
+  padding: ${spacing.XXS}rem;
   display: inline;
   border-radius: 0 20px 20px 0;
-  background-color: #FF4C40;
+  background-color: ${color.heroCTAbtn};
   color: #fff;
-`;
-
-export const HeroStyled = styled.div`
-  /* margin-bottom: 10rem; */
 `;
 
 export const Panel = styled.div`
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  padding: 1rem 7rem 2rem 7rem;
+  padding: 1rem ${spacing.L}rem 2rem ${spacing.L}rem;
   border-radius: 1rem;
 `;
 
 export const HeroSubTitle = styled.div`
   align-self: center;
-  font-size: 1.6rem;
-  color: white;
-  padding-bottom: 4rem;
+  font-size: ${font.M};
+  color: ${color.heroSubTitleText};
+  padding-bottom: ${spacing.M}rem;
 `;
 
 export const OfferBox = styled.span`
   border-radius: 1rem;
   color: #fff;
   /* background-color: #2e4057; */
-  font-size: 1.6rem;
-  padding: 2.7rem;
+  font-size: ${font.M}rem;
+  padding: ${spacing.S}rem;
   border: 2px solid #fff;
+  transition: all 0.3s ease 0s;
+
+  :hover {
+    background: white;
+    color: ${color.primaryDarkerCol};
+  }
 `;
 
 export const OfferBoxContent = styled.div`
@@ -97,7 +104,7 @@ export const OfferBoxOffer = styled.div`
 `;
 
 export const OfferBoxRow = styled.div`
-  margin-top: 2rem;
+  margin-top: ${spacing.S}rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -107,11 +114,18 @@ export const OfferBoxRow = styled.div`
 export const YoutubeContainer = styled.div``;
 
 export const YoutubePanel = styled.div`
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   display: flex;
   flex-direction: column;
-  padding: 3rem 7rem 2rem 7rem;
+  /* padding: ${spacing.M}rem ${spacing.L}rem ${spacing.S}rem ${
+  spacing.L
+}rem; */
   border-radius: 1rem;
   justify-content: center;
   z-index: 1;
+  overflow:hidden;
+  width: 40%;
+  img {
+    max-width: 100%;
+  }
 `;

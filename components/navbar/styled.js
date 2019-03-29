@@ -1,28 +1,30 @@
 import styled from "styled-components";
+import { spacing, font, color } from "../designSystem";
 
 export const NavBarContainer = styled.div`
   display: flex;
   justify-content: flex-end;
-  padding-right: 8rem;
+  padding-right: ${spacing.XL}rem;
   align-items: center;
-  background-color: #008DB9;
-  color: #fff;
-  padding: 0 20rem;
-
+  background-color: ${color.primaryCol};
+  color: ${color.navbarTextColor};
+  padding: 0 ${spacing.XXXL}rem;
 `;
+
 export const NavItem = styled.div`
-  margin: 2rem;
-  font-size: 1.6rem;
+  margin: ${spacing.S}rem;
+  font-size: ${font.M}rem;
   font-weight: bold;
 `;
 
 export const CTAbtn = styled.div`
-  color: #fff;
+  color: ${color.navbarCTAtext};
   display: inline-block;
   font-display: inherit;
-  background-color: #FF4C40;;
-  padding: 0.5em 1.3em 0.5em 1.3em;
+  background-color: ${color.navbarCTAbtn};
+  padding: ${spacing.XXXXXS}rem ${spacing.XXS}rem ${spacing.XXXXXS}rem
+    ${spacing.XXS}rem;
   margin: 0 auto;
-  border-radius: 0.5rem;
+  border-radius: ${spacing.XXXXXS}rem;
   /* border: 2px solid #4286f4; */
 `;

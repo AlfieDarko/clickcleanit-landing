@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { spacing, font, color } from "../designSystem";
 
 export const Container = styled.div`
   display: flex;
@@ -18,10 +19,11 @@ export const HeroFormItem = styled.div`
 `;
 
 export const HeroCTAbtn = styled.div`
-  padding: 1.1rem;
-  display: inline;
-  border-radius: 0 20px 20px 0;
-  background-color: #FF4C40;
+  padding: 1rem 2rem 1rem 2rem;
+  margin-left: 3.2rem;
+  display: inline-block;
+  border-radius: 0.8rem;
+  background-color: #ff4c40;
   color: #fff;
 `;
 
