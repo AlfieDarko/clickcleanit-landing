@@ -9,7 +9,8 @@ import {
   TestimonialCardsContainer,
   TestimonialsContainer,
   CTAContainer,
-  ProofContainer
+  ProofContainer,
+  TitleContainer2
 } from "./styled";
 import {
   ProofCol,
@@ -63,9 +64,9 @@ const Testimonials = () => {
       </Container>
 
       <TestimonialsContainer>
-        <TitleContainer>
+        <TitleContainer2>
           <Title>Look what our customers say about us!</Title>
-        </TitleContainer>
+        </TitleContainer2>
         <SubTitle>
           We pride ourselves on customer service and the end result, leaving you
           with a home you can be proud of.

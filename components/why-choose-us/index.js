@@ -8,7 +8,9 @@ import {
   LastWrapper,
   TitleContainer,
   SubTitle,
-  Title
+  Title,
+  Column,
+  MiddleColumn
 } from "./styled";
 import CTA from "../buttons/CTA";
 const WhyChooseUs = () => {
@@ -16,57 +18,61 @@ const WhyChooseUs = () => {
     <Container>
       <TitleContainer>
         <Title>Why Choose ClickCleanit?</Title>
-        <SubTitle>loremipsum loremipsum</SubTitle>
+        <SubTitle>Here is what we do for thousands of people like you</SubTitle>
       </TitleContainer>
       <Wrapper>
-        <TitleItem>Save your energy for other things</TitleItem>
+        <Column>
+          <img src="/static/images/chilling.jpg" />
+        </Column>
+
         <ParagraphItem>
+          <TitleItem>Save your energy for other things</TitleItem>
           <p>
-            The last thing on our mind when we come home from a hard day's work
-            is using the little time left to do the cleaning.
+            Tired of trying to do a million and one things to do in 24 hours?
           </p>
           <p>
-            That's we are dedicated to giving you the cleanest home possible so
-            you can relax and concentrate on the more important things in life.
+            We want to help you get the time to relax and concentrate on the
+            more important things in life by keeping your home fresh and clean
+            so you don't have to.{" "}
           </p>
         </ParagraphItem>
       </Wrapper>
       <SexyLinebreak />
-      <Wrapper>
-        <TitleItem>Create more spare time for yourself</TitleItem>
 
+      <Wrapper>
         <ParagraphItem>
+          <TitleItem>Get your time-freedom back</TitleItem>
           <p>
             Why spend your time cleaning when you can hire us to do twice as
             much — in half the time?
           </p>
-
           <p>
             By choosing ClickCleanit, we leave you with more time, more energy,
-            and you get the joy of returning to an impeccable home again.
-          </p>
-
-          <p>
-            You’re not only getting back the home you first moved into — but you
-            are creating a
-            <b> safe, clean environment for you & your family to thrive in</b>.
+            and you get the joy of returning to an immaculate & tidy home again.
           </p>
         </ParagraphItem>
+        <MiddleColumn>
+          <img src="/static/images/couples.jpg" />
+        </MiddleColumn>
       </Wrapper>
       <SexyLinebreak />
 
       <Wrapper>
-        <TitleItem>Let Us Do Your Dirty Work Today</TitleItem>
+        <Column>
+          <img src="/static/images/happy-man.jpg" />
+        </Column>
         <ParagraphItem>
+          <TitleItem>Clean Home, Happy Heart</TitleItem>
+
           <p>
-            Cleaning your home can be a daunting & tiring task. <br />
-            How much time do we really have to clean after coming back home,
-            cooking and wining down from a hard days work?
+            An unclean home robs you of your health and peace of mind. It's one
+            of the first signs that something is wrong.
           </p>
 
           <p>
-            By choosing us, you get to keep your hands clean while we keep your
-            home clean. It's a win/win situation.
+            By choosing us, we will get our hands dirty for you. Your family &
+            your guests will feel so impressed when they step foot in your
+            everfresh home. Let us help make your home a source of happiness!
           </p>
         </ParagraphItem>
       </Wrapper>
@@ -76,7 +82,7 @@ const WhyChooseUs = () => {
         <ParagraphItem>
           <p>
             Come home to a house that’s been tidied, polished and smells
-            wonderfully fresh. Book our house cleaning services and make your
+            absolutely wonderful. Book our house cleaning services and make your
             life simpler and easier.
           </p>
 

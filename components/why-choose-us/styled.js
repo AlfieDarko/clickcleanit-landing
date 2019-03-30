@@ -3,16 +3,16 @@ import { spacing, font, color } from "../designSystem";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: #f7f9f9;
+  background-color: ${color.offwhiteBG};
   padding: 0 ${spacing.XXXL}rem;
 `;
 
 export const TitleItem = styled.div`
   /* font-weight: 600; */
-  font-size: ${font.L}rem;
-  margin: 0 9rem;
+  font-size: ${font.XL}rem;
   align-self: center;
   max-width: ${spacing.XXXXXL}rem;
+  margin: ${spacing.M}rem 0;
 `;
 
 export const ParagraphItem = styled.div`
@@ -20,7 +20,7 @@ export const ParagraphItem = styled.div`
   width: 50rem;
   align-self: center;
   font-size: ${font.M}rem;
-  color: #174959;
+  color: ${color.primaryTextCol};
 `;
 
 export const IconItem = styled.div``;
@@ -31,6 +31,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
   padding: ${spacing.L}rem 0;
+  justify-content: flex-start;
 `;
 
 export const LastWrapper = styled.div`
@@ -77,4 +78,26 @@ export const Title = styled.div`
   display: flex;
   flex-direction: column;
   align-self: center;
+`;
+
+export const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const Column = styled.div`
+  display: flex;
+  flex-direction: row;
+  img {
+    max-width: 50%;
+  }
+`;
+
+export const MiddleColumn = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  img {
+    max-width: 50%;
+  }
 `;

@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: space-between;
   padding: 7rem 9rem 10rem 9rem;
   background-color: #f7f9f9;
-  color: #007599;
+  color: ${color.primaryTextCol};
   padding: ${spacing.XL}rem ${spacing.XXXL}rem;
   flex-direction: column;
 `;
@@ -16,7 +16,7 @@ export const TestimonialsContainer = styled.div`
   justify-content: space-between;
   padding: 7rem 9rem 10rem 9rem;
   background-color: ${color.sectionBGlight};
-  color: #007599;
+  color: ${color.primaryTextCol};
   padding: ${spacing.XS}rem ${spacing.XXXL}rem;
   flex-direction: column;
 `;
@@ -33,6 +33,12 @@ export const SubTitle = styled.p`
 export const TitleContainer = styled.div`
   display: flex;
   justify-content: center;
+`;
+
+export const TitleContainer2 = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: ${spacing.L}rem;
 `;
 
 export const ContentCardsContainer = styled.div`

@@ -8,23 +8,37 @@ export const Container = styled.div`
 `;
 
 export const HeroTitleItem = styled.div`
-  font-size: 6rem;
-  margin-top: 20rem;
+  font-size: ${font.XXXL}rem;
+  margin-top: ${spacing.XXXL}rem;
 `;
 
 export const HeroFormItem = styled.div`
-  margin-top: 4rem;
-  margin-bottom: 6rem;
+  margin-top: ${spacing.XXL}rem;
+  margin-bottom: ${spacing.XXXL}rem;
   /* border: 1px solid black; */
 `;
 
 export const HeroCTAbtn = styled.div`
-  padding: 1rem 2rem 1rem 2rem;
-  margin-left: 3.2rem;
+  padding: ${spacing.XXS}rem ${spacing.S}rem;
+  margin-left: ${spacing.M}rem;
   display: inline-block;
   border-radius: 0.8rem;
   background-color: #ff4c40;
   color: #fff;
+  transition: all 0.3s ease 0s;
+
+  :hover {
+    background-color: #fff;
+    color: #ff4c40;
+  }
+
+  :active {
+    background-color: #fe8f90;
+    background-color: #fff;
+
+    transform: scale(0.9);
+    /* transform: translateXY(3px, 3px); */
+  }
 `;
 
 export const HeroStyled = styled.div`

@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-evenly;
   background-color: white;
-  color: #007599;
+  color: ${color.primaryCol};
   padding: 8rem;
   flex-direction: column;
   padding: 0 20rem 8rem 20rem;
@@ -22,7 +22,7 @@ export const IconBlockWrapper = styled.div`
   border-radius: 1rem;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.025);
   width: 25%;
-  background: #007599;
+  background: ${color.primaryCol};
   color: white;
 `;
 export const ParagraphItem = styled.div``;
@@ -62,7 +62,7 @@ export const Title = styled.div`
     /* font-weight: bold; */
     display: block;
     font-size: ${font.XXL}rem;
-    color: #007599;
+    color: ${color.primaryTextCol};
   }
 `;
 
@@ -72,6 +72,7 @@ export const CardWrapper = styled.div`
 `;
 
 export const SubTitle = styled.div`
+  color: ${color.primaryTextCol};
   align-self: center;
 `;
 
@@ -86,6 +87,7 @@ export const CTAContainer = styled.div`
   flex-direction: column;
   margin-top: ${spacing.L}rem;
   text-align: center;
+  color: ${color.primaryTextCol};
   div {
     align-self: center;
   }

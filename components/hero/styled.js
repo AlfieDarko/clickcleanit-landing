@@ -13,14 +13,14 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: ${color.primaryDarkerCol};
+  color: ${color.primaryCol};
   justify-content: center;
-  clip-path: polygon(100% -100%, 100% 82.26%, 0% 100%, 0% -17.38%);
+  /* clip-path: polygon(100% -100%, 100% 82.26%, 0% 100%, 0% -17.38%); */
   /* RIGHTWARDS = > TO 100 */
   /* DOWNWARDS  TO 100 */
   z-index: 0;
   align-items: baseline;
-  height: 75vh;
+  /* height: 70vh; */
   padding: 0 ${spacing.XXXL};
 `;
 
@@ -84,11 +84,11 @@ export const OfferBox = styled.span`
   font-size: ${font.M}rem;
   padding: ${spacing.S}rem;
   border: 2px solid #fff;
-  transition: all 0.3s ease 0s;
+  transition: all 0.2s ease-in 0s;
 
   :hover {
     background: white;
-    color: ${color.primaryDarkerCol};
+    color: ${color.primaryCol};
   }
 `;
 

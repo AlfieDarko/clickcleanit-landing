@@ -10,8 +10,6 @@ import {
   SubTitle,
   CTAContainer
 } from "./styled";
-import { Icon } from "semantic-ui-react";
-import { Calendar, Coffee, Smile } from "react-feather";
 import CTA from "../buttons/CTA";
 const HowWeWork = () => {
   return (

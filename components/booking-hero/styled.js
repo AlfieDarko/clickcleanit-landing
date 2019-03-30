@@ -11,16 +11,22 @@ export const BookingContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   align-content: space-between;
-  background: #f7f9f9;
+  background: ${color.offwhiteBG};
 `;
 
 export const OfferBox = styled.span`
   border-radius: 1rem;
-  color: black;
-  /* background-color: #2e4057; */
+  color: white;
+  background-color: ${color.primaryCol};
   font-size: ${font.M}rem;
   padding: ${spacing.M}rem;
   border: 2px solid black;
+  transition: all 0.3s ease 0s;
+  border: none;
+  :hover {
+    background: #00b99fa1;
+    color: #ffffffc9;
+  }
 `;
 
 export const OfferBoxContent = styled.div`
