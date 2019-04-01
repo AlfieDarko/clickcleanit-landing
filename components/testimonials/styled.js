@@ -62,7 +62,7 @@ export const ContentCard = styled.div`
   align-self: center;
 
   border-radius: 1rem;
-  margin: 2rem;
+  margin: ${spacing.S}rem;
 
   img {
     filter: grayscale(1);
@@ -86,5 +86,5 @@ export const ProofContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 4rem;
+  margin: ${spacing.M}rem;
 `;

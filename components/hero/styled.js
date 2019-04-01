@@ -6,6 +6,7 @@ export const OuterContainer = styled.div`
   justify-content: center;
   border-radius: 1rem;
   margin-bottom: ${spacing.M}rem;
+  padding: 0 ${spacing.XXXL}rem ${spacing.XL}rem ${spacing.XXXL}rem;
 `;
 
 export const Container = styled.div`
@@ -120,7 +121,7 @@ export const YoutubePanel = styled.div`
   /* padding: ${spacing.M}rem ${spacing.L}rem ${spacing.S}rem ${
   spacing.L
 }rem; */
-  border-radius: 1rem;
+  border-radius: ${spacing.XXS}rem;
   justify-content: center;
   z-index: 1;
   overflow:hidden;

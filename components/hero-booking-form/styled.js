@@ -22,7 +22,7 @@ export const HeroCTAbtn = styled.div`
   padding: ${spacing.XXS}rem ${spacing.S}rem;
   margin-left: ${spacing.M}rem;
   display: inline-block;
-  border-radius: 0.8rem;
+  border-radius: ${spacing.XXXS}rem;
   background-color: #ff4c40;
   color: #fff;
   transition: all 0.3s ease 0s;

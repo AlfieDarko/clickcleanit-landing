@@ -9,10 +9,21 @@ import Footer from "../components/footer";
 import SocialProof from "../components/socialproof-hero";
 import Testimonials from "../components/testimonials";
 import BookUsHero from "../components/booking-hero";
+import Sticky from "react-stickynode";
 // import "../static/semantic/dist/semantic.css";
+
 const Index = () => (
   <div>
-    <NavBar />
+    <Sticky enabled={true} top={0} innerZ={3}>
+      {status => {
+        if (status.status === Sticky.STATUS_FIXED) {
+          return <NavBar isSticky={true} />;
+        }
+        if (status.status === Sticky.STATUS_ORIGINAL) {
+          return <NavBar isSticky={false} />;
+        }
+      }}
+    </Sticky>
     <Hero />
     <HowWeWork />
     <WhyChooseUs />

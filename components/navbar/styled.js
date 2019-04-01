@@ -3,12 +3,18 @@ import { spacing, font, color } from "../designSystem";
 
 export const NavBarContainer = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding-right: ${spacing.XL}rem;
   align-items: center;
-  background-color: ${color.primaryCol};
-  color: ${color.navbarTextColor};
+  /* background-color: ${color.primaryCol};
+  color: ${color.navbarTextColor}; */
   padding: 0 ${spacing.XXXL}rem;
+  transition: all 0.5s ease 0s;
+
+  background-color: ${props =>
+    props.isSticky ? `${color.offwhiteBG}` : `${color.primaryCol}`};
+  color: ${props =>
+    props.isSticky ? `${color.primaryTextCol}` : `${color.navbarTextColor}`};
 `;
 
 export const NavItem = styled.div`
@@ -39,5 +45,18 @@ export const CTAbtn = styled.div`
     background-color: #fe8f90;
     background-color: #fff;
     transform: scale(0.9);
+  }
+`;
+
+export const NavSeperator = styled.div`
+  display: flex;
+`;
+
+export const LogoText = styled.span`
+  font-family: "Brandon Grotesque";
+  font-weight: 700;
+  font-size: ${font.L}rem;
+  i {
+    margin: 0 ${spacing.XXS}rem;
   }
 `;

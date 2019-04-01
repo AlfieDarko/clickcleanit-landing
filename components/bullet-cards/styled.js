@@ -7,7 +7,7 @@ import { spacing, font, color } from "../designSystem";
 export const Container = styled.div`
   background: ${color.bulletCardContainerBG};
   display: flex;
-  padding: 5rem;
+  padding: ${spacing.L}rem;
   background: ${color.bulletContainerBG};
   color: ${color.bulletCardTitleColor};
   justify-content: center;
@@ -41,8 +41,8 @@ export const ContentContainer = styled.div`
 export const ContentCard = styled.div`
   color: ${color.bulletCardTextColor};
   background: ${color.bulletCardBG};
-  padding: 3rem;
-  margin: 2rem;
+  padding: ${spacing.M}rem;
+  margin: ${spacing.S}rem;
   border-radius: 1rem;
   width: 70%;
   text-align: center;
@@ -129,7 +129,7 @@ export const ContentColumn = styled.div`
 
 export const IconWrapper = styled.div`
   display: flex;
-  font-size: 1rem;
+  font-size: ${spacing.XXS}rem;
   justify-content: center;
 `;
 
@@ -145,7 +145,7 @@ export const ParagraphWrapper = styled.div`
 export const BulletTitle = styled.span`
   display: inline-block;
   font-weight: bold;
-  margin: 1rem;
+  margin: ${spacing.XXS}rem;
 `;
 
 export const CTAContainer = styled.div`

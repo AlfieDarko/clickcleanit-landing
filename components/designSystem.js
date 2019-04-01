@@ -24,7 +24,7 @@ export const font = {
 };
 
 export const color = {
-  primaryCol: "#00b99fc9",
+  primaryCol: "#36c7b3",
   primaryTextCol: "#3b3b3b",
   offwhiteBG: "#f7f9f9",
   primaryDarkerCol: "#007599",

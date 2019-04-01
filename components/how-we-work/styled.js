@@ -8,7 +8,7 @@ export const Container = styled.div`
   color: ${color.primaryCol};
   padding: 8rem;
   flex-direction: column;
-  padding: 0 20rem 8rem 20rem;
+  padding: 0 ${spacing.XXXL}rem ${spacing.XL}rem ${spacing.XXXL}rem;
 `;
 
 export const TitleItem = styled.div`
