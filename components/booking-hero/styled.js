@@ -32,7 +32,7 @@ export const OfferBox = styled.span`
 export const OfferBoxContent = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 2rem;
+  margin: ${spacing.S}rem;
 `;
 
 export const OfferBoxOffer = styled.div`
@@ -51,5 +51,5 @@ export const OfferBoxRow = styled.div`
 export const Title = styled.div`
   text-align: center;
   font-size: ${font.L}rem;
-  margin-top: 6.4rem;
+  margin-top: ${spacing.L}rem;
 `;

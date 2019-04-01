@@ -6,7 +6,7 @@ export const OuterContainer = styled.div`
   justify-content: center;
   border-radius: 1rem;
   margin-bottom: ${spacing.M}rem;
-  padding: 0 ${spacing.XXXL}rem ${spacing.XL}rem ${spacing.XXXL}rem;
+  padding: 0 ${spacing.XXXL}rem ${spacing.L}rem ${spacing.XXXL}rem;
 `;
 
 export const Container = styled.div`

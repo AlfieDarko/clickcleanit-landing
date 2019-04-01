@@ -45,9 +45,9 @@ const Hero = () => {
                 <OfferBoxOffer>15% Off</OfferBoxOffer>
               </OfferBoxContent>
             </OfferBoxRow>
-            <HeroFormItem>
+            <div>
               <BookingForm />
-            </HeroFormItem>
+            </div>
           </Panel>
           <YoutubePanel>
             <img src="/static/clipart/AUG_WET_FLOOR_04_EEZY.png" />
