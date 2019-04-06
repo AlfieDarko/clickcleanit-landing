@@ -1,26 +1,40 @@
 import styled from "styled-components";
-import { spacing, font, color } from "../designSystem";
+import { spacing, font, color, maxMedia, minMedia } from "../designSystem";
 
 export const NavBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  padding-right: ${spacing.XL}rem;
-  align-items: center;
-  /* background-color: ${color.primaryCol};
-  color: ${color.navbarTextColor}; */
-  padding: 0 ${spacing.XXXL}rem;
-  transition: all 0.5s ease 0s;
 
   background-color: ${props =>
     props.isSticky ? `${color.offwhiteBG}` : `${color.primaryCol}`};
   color: ${props =>
     props.isSticky ? `${color.primaryTextCol}` : `${color.navbarTextColor}`};
+  transition: all 0.5s ease 0s;
+
+  box-shadow: ${props =>
+    props.isSticky
+      ? `0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)`
+      : `none`};
+  padding: 0 ${spacing.XXXL}rem;
+  padding-right: ${spacing.XL}rem;
+  align-items: center;
+  ${maxMedia.mobileLarge`
+    padding: 0 3rem;
+    justify-content: flex-end;
+    padding-right: 0;
+  `}
 `;
 
 export const NavItem = styled.div`
   margin: ${spacing.S}rem;
   font-size: ${font.M}rem;
-  /* font-weight: bold; */
+  ${maxMedia.tablet`
+    display: ${props => (props.isHiddenOnMobile ? `none` : `initial`)}
+  `}
+
+  ${minMedia.tabletLarge`
+    display: ${props => (props.isHiddenOnDesktop ? `none` : `initial`)}
+  `}
 `;
 
 export const CTAbtn = styled.div`
@@ -59,4 +73,14 @@ export const LogoText = styled.span`
   i {
     margin: 0 ${spacing.XXS}rem;
   }
+
+  ${maxMedia.mobileLarge`
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0;
+    i {
+      display: none;
+    }
+    
+  `}
 `;

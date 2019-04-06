@@ -28,12 +28,12 @@ const WhyChooseUs = () => {
         <ParagraphItem>
           <TitleItem>Save your energy for other things</TitleItem>
           <p>
-            Tired of trying to do a million and one things to do in 24 hours?
+            Modern day living is <b>hard</b>. It's like there are a million things we need to do but there's simply not enough time. Things can get really exhausting.
           </p>
           <p>
             We want to help you get the time to relax and concentrate on the
             more important things in life by keeping your home fresh and clean
-            so you don't have to.{" "}
+            so you don't have to.
           </p>
         </ParagraphItem>
       </Wrapper>
@@ -70,9 +70,7 @@ const WhyChooseUs = () => {
           </p>
 
           <p>
-            By choosing us, we will get our hands dirty for you. Your family &
-            your guests will feel so impressed when they step foot in your
-            everfresh home. Let us help make your home a source of happiness!
+            By choosing us, we will get our hands dirty for you. Regain that brand new feeling when you first moved in. Let us help make your home a source of happiness again!
           </p>
         </ParagraphItem>
       </Wrapper>

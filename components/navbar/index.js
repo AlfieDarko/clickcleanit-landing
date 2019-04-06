@@ -6,6 +6,7 @@ import {
   NavSeperator,
   LogoText
 } from "./styled";
+import BurgerMenu from "./burger-menu";
 const NavBar = props => {
   // console.log("my props", props.handleStateChange);
   return (
@@ -18,9 +19,9 @@ const NavBar = props => {
           </LogoText>
         </NavSeperator>
         <NavSeperator>
-          <NavItem>Home</NavItem>
-          <NavItem>Services</NavItem>
-          <NavItem>FAQ's</NavItem>
+          <NavItem isHiddenOnMobile={true}>Home</NavItem>
+          <NavItem isHiddenOnMobile={true}>Services</NavItem>
+          <NavItem isHiddenOnMobile={true}>FAQ's</NavItem>
           <NavItem>
             <CTAbtn>Book Now!</CTAbtn>
           </NavItem>

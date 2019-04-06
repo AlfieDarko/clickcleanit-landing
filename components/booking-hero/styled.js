@@ -1,9 +1,14 @@
 import styled from "styled-components";
-import { color, spacing, font } from "../designSystem";
+import { color, spacing, font, minMedia, maxMedia } from "../designSystem";
 
 export const BookingFormContainer = styled.div`
   display: flex;
   justify-content: center;
+
+  ${maxMedia.mobileLarge`
+    flex-direction: column;
+    margin: 6.2rem;
+  `}
 `;
 
 export const BookingContainer = styled.div`
@@ -46,6 +51,10 @@ export const OfferBoxRow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  ${maxMedia.mobileLarge`
+    flex-wrap: wrap;
+  `}
+
 `;
 
 export const Title = styled.div`

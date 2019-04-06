@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { spacing, font, color } from "../designSystem";
+import { spacing, font, color, maxMedia } from "../designSystem";
 
 export const OuterContainer = styled.div`
   display: flex;
@@ -7,6 +7,14 @@ export const OuterContainer = styled.div`
   border-radius: 1rem;
   margin-bottom: ${spacing.M}rem;
   padding: 0 ${spacing.XXXL}rem ${spacing.L}rem ${spacing.XXXL}rem;
+
+  ${maxMedia.mobileLarge`
+    padding: 0;
+  `}
+
+  ${maxMedia.tablet`
+    padding: 0;
+  `}
 `;
 
 export const Container = styled.div`
@@ -43,6 +51,18 @@ export const HeroFormItem = styled.div`
     justify-content: center;
     display: flex;
   }
+
+  ${maxMedia.mobileLarge`
+    div > {
+      display: inherit;
+
+    }
+  `}
+
+  ${maxMedia.tablet`
+    display: grid;
+    margin: 1rem;
+  `}
 `;
 
 export const HeroStyled = styled.div`
@@ -61,6 +81,16 @@ export const HeroCTAbtn = styled.div`
   border-radius: 0 20px 20px 0;
   background-color: ${color.heroCTAbtn};
   color: #fff;
+
+  ${maxMedia.mobileLarge`
+    display: inherit;
+    margin: 3rem 0 0 0;
+    text-align: center;
+  `}
+
+  ${maxMedia.tablet`
+    margin: 1rem;
+  `}
 `;
 
 export const Panel = styled.div`
@@ -69,6 +99,9 @@ export const Panel = styled.div`
   flex-direction: column;
   padding: 1rem ${spacing.L}rem 2rem ${spacing.L}rem;
   border-radius: 1rem;
+  ${maxMedia.mobileLarge`
+    padding: 1rem;
+  `}
 `;
 
 export const HeroSubTitle = styled.div`
@@ -110,23 +143,31 @@ export const OfferBoxRow = styled.div`
   flex-direction: row;
   justify-content: center;
   justify-content: space-between;
+
+  ${maxMedia.mobileLarge`
+    flex-wrap: wrap;
+    padding: 2rem;
+  `}
 `;
 
 export const YoutubeContainer = styled.div``;
 
 export const YoutubePanel = styled.div`
-  /* margin-top: 2rem; */
   display: flex;
   flex-direction: column;
-  /* padding: ${spacing.M}rem ${spacing.L}rem ${spacing.S}rem ${
-  spacing.L
-}rem; */
   border-radius: ${spacing.XXS}rem;
   justify-content: center;
   z-index: 1;
-  overflow:hidden;
+  overflow: hidden;
   width: 40%;
   img {
     max-width: 100%;
   }
+  ${maxMedia.mobileLarge`
+    display:none;
+  `}
+
+  ${maxMedia.tablet`
+    display:none;
+  `}
 `;

@@ -1,11 +1,15 @@
 import styled from "styled-components";
-import { spacing, font, color } from "../designSystem";
+import { color, spacing, font, minMedia, maxMedia } from "../designSystem";
 
 export const Container = styled.div`
   padding: ${spacing.M}rem ${spacing.XL}rem ${spacing.L}rem ${spacing.XL}rem;
 
   display: flex;
   justify-content: space-between;
+
+  ${maxMedia.mobileLarge`
+    flex-wrap: wrap;
+  `}
 `;
 
 export const LeftContainer = styled.div`
@@ -15,6 +19,10 @@ export const LeftContainer = styled.div`
 
 export const RightContainer = styled.div`
   display: flex;
+
+  ${maxMedia.mobileLarge`
+    display: none;
+  `}
 `;
 
 export const SocIcon = styled.div`

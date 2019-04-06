@@ -2,6 +2,7 @@ import React from "react";
 import { HeroFormItem, HeroCTAbtn } from "./styled";
 import DropdownSelector from "./selection/index";
 import { bathroomOptions, bedroomOptions, cleaningType } from "./options";
+
 const BookingForm = () => {
   return (
     <>

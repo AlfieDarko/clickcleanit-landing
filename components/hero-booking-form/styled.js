@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { spacing, font, color } from "../designSystem";
+import { spacing, font, color, maxMedia } from "../designSystem";
 
 export const Container = styled.div`
   display: flex;
@@ -15,7 +15,13 @@ export const HeroTitleItem = styled.div`
 export const HeroFormItem = styled.div`
   margin-top: ${spacing.L}rem;
   margin-bottom: ${spacing.L}rem;
-  /* border: 1px solid black; */
+  ${maxMedia.mobileLarge`
+    display: grid;
+    div > {
+      display: inherit;
+
+    }
+  `}
 `;
 
 export const HeroCTAbtn = styled.div`
@@ -26,6 +32,10 @@ export const HeroCTAbtn = styled.div`
   background-color: #ff4c40;
   color: #fff;
   transition: all 0.3s ease 0s;
+  ${maxMedia.mobileLarge`
+    margin: 1rem;
+    text-align: center;
+  `}
 
   :hover {
     background-color: #fff;

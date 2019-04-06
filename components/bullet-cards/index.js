@@ -34,7 +34,6 @@ const BulletCards = () => {
               <FontAwesomeIcon icon="clock" size="6x" />
             </IconWrapper>
             <BulletTitle>Get Your Time Back</BulletTitle>
-
             <ParagraphWrapper>
               <p>
                 ClickCleanit helps you live smarter, giving you time to focus on
@@ -42,6 +41,7 @@ const BulletCards = () => {
               </p>
             </ParagraphWrapper>
           </ContentCard>
+
           <ContentCard>
             <IconWrapper>
               <FontAwesomeIcon icon="handshake" size="6x" />
@@ -69,16 +69,17 @@ const BulletCards = () => {
               </p>
             </ParagraphWrapper>
           </ContentCard>
+
           <ContentCard>
             <IconWrapper>
               <FontAwesomeIcon icon="comment" size="6x" />
             </IconWrapper>
-
-            <BulletTitle>Transparent Pricing</BulletTitle>
+            <BulletTitle>Online Chat</BulletTitle>
             <ParagraphWrapper>
               <p>
-                No sneaky moves requesting a callback before telling you how
-                much we charge. Our prices are available online.
+                Ask us question or make order changes on the fly by using our
+                speedy online chat. You don't have to wait for an email or
+                callback!
               </p>
             </ParagraphWrapper>
           </ContentCard>
@@ -87,10 +88,9 @@ const BulletCards = () => {
         <ContentColumn>
           <ContentCard>
             <IconWrapper>
-              <FontAwesomeIcon icon="clipboard-check" size="6x" />
+              <FontAwesomeIcon icon="glasses" size="6x" />
             </IconWrapper>
-
-            <BulletTitle>No Sneaky Charges</BulletTitle>
+            <BulletTitle>Transparent Pricing</BulletTitle>
             <ParagraphWrapper>
               <p>
                 What you see is what you pay. You won't find any hidden charges
@@ -98,11 +98,11 @@ const BulletCards = () => {
               </p>
             </ParagraphWrapper>
           </ContentCard>
+
           <ContentCard>
             <IconWrapper>
-              <FontAwesomeIcon icon="comment" size="6x" />
+              <FontAwesomeIcon icon="stopwatch" size="6x" />
             </IconWrapper>
-
             <BulletTitle>Quick & Easy</BulletTitle>
             <ParagraphWrapper>
               <p>

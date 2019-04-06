@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { spacing, font, color } from "../designSystem";
+import { spacing, font, color, maxMedia } from "../designSystem";
 
 export const Container = styled.div`
   display: flex;
@@ -9,6 +9,13 @@ export const Container = styled.div`
   padding: 8rem;
   flex-direction: column;
   padding: 0 ${spacing.XXXL}rem ${spacing.XL}rem ${spacing.XXXL}rem;
+
+  ${maxMedia.mobileLarge`
+    padding: 0;
+   `}
+  ${maxMedia.tablet`
+    padding: 0;
+   `}
 `;
 
 export const TitleItem = styled.div`
@@ -24,6 +31,10 @@ export const IconBlockWrapper = styled.div`
   width: 25%;
   background: ${color.primaryCol};
   color: white;
+  ${maxMedia.mobileLarge`
+    width: 100%;
+    margin: 1.6rem;
+  `}
 `;
 export const ParagraphItem = styled.div``;
 
@@ -69,6 +80,9 @@ export const Title = styled.div`
 export const CardWrapper = styled.div`
   display: flex;
   justify-content: space-around;
+  ${maxMedia.mobileLarge`
+    flex-wrap: wrap;
+  `}
 `;
 
 export const SubTitle = styled.div`
@@ -91,4 +105,8 @@ export const CTAContainer = styled.div`
   div {
     align-self: center;
   }
+  ${maxMedia.mobileLarge`
+    flex-wrap: wrap;
+    margin-bottom: 3.2rem;
+  `}
 `;

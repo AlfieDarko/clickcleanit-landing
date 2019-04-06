@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { spacing, font, color } from "../designSystem";
+import { spacing, font, color, maxMedia } from "../designSystem";
 
 // background: #7b9a9a;
 // color: #d7e1e1;
@@ -14,6 +14,18 @@ export const Container = styled.div`
   flex-direction: column;
   align-content: center;
   padding: 0 ${spacing.XXXL}rem ${spacing.XL}rem ${spacing.XXXL}rem;
+
+  ${maxMedia.mobileLarge`
+    width: 100%;
+    padding: 0;
+    margin-bottom: 3.2rem;
+  `}
+  ${maxMedia.tablet`
+    padding: 0;
+  `}
+  ${maxMedia.tabletLarge`
+    padding: 0;
+   `}
 `;
 
 export const TitleContainer = styled.div`
@@ -27,15 +39,29 @@ export const Title = styled.div`
   justify-content: center;
   font-size: ${font.XXL}rem;
   align-self: center;
+  ${maxMedia.mobileLarge`
+    text-align: center;
+  `}
 `;
 
 export const SubTitle = styled.p`
   align-self: center;
+  ${maxMedia.mobileLarge`
+    margin-top: 1.6rem;
+    text-align: center;
+  `}
 `;
 
 export const ContentContainer = styled.div`
   justify-content: space-around;
   display: flex;
+  ${maxMedia.mobileLarge`
+    flex-wrap: wrap;
+    display: contents;
+    align-content: center;
+    display: flex;
+    flex-direction: column;  
+  `}
 `;
 
 export const ContentCard = styled.div`
@@ -46,6 +72,10 @@ export const ContentCard = styled.div`
   border-radius: 1rem;
   width: 70%;
   text-align: center;
+
+  ${maxMedia.mobileLarge`
+    width: 365px;
+  `}
 
   :hover {
     animation-name: wiggle;

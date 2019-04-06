@@ -6,14 +6,17 @@ import WhyChooseUs from "../components/why-choose-us/index";
 import HowWeWork from "../components/how-we-work";
 import BulletCards from "../components/bullet-cards";
 import Footer from "../components/footer";
-import SocialProof from "../components/socialproof-hero";
+import ScrollBtn from "../components/buttons/BackToTop";
 import Testimonials from "../components/testimonials";
 import BookUsHero from "../components/booking-hero";
 import Sticky from "react-stickynode";
+import BurgerMenu from "../components/navbar/burger-menu";
 // import "../static/semantic/dist/semantic.css";
 
 const Index = () => (
-  <div>
+  <div id="app">
+    <BurgerMenu outerContainerId={"app"} pageWrapId={"page-wrap"} />
+
     <Sticky enabled={true} top={0} innerZ={3}>
       {status => {
         if (status.status === Sticky.STATUS_FIXED) {
@@ -24,14 +27,17 @@ const Index = () => (
         }
       }}
     </Sticky>
-    <Hero />
-    <HowWeWork />
-    <WhyChooseUs />
-    <BulletCards />
-    <Testimonials />
-    {/* <SocialProof /> */}
-    <BookUsHero />
-    <Footer />
+    <ScrollBtn />
+
+    <div id="page-wrap">
+      <Hero />
+      <HowWeWork />
+      <WhyChooseUs />
+      <BulletCards />
+      <Testimonials />
+      <BookUsHero />
+      {/* <Footer /> */}
+    </div>
   </div>
 );
 

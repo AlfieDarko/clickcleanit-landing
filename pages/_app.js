@@ -8,10 +8,19 @@ import {
   faClock,
   faClipboardCheck,
   faHandshake,
-  faComment
+  faComment,
+  faGlasses,
+  faStopwatch
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faClock, faClipboardCheck, faHandshake, faComment);
+library.add(
+  faClock,
+  faClipboardCheck,
+  faHandshake,
+  faComment,
+  faGlasses,
+  faStopwatch
+);
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = {};

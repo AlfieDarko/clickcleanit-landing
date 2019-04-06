@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { spacing, font, color } from "../designSystem";
+import { spacing, font, color, maxMedia } from "../designSystem";
 
 export const Container = styled.div`
   display: flex;
@@ -15,6 +15,7 @@ export const ProofCol = styled.div`
   display: flex;
   flex-direction: column;
   align-content: center;
+
 `;
 
 export const ProofRow = styled.div`
@@ -23,6 +24,10 @@ export const ProofRow = styled.div`
 
 export const ProofText = styled.div`
   font-size: ${font.M}rem;
+  ${maxMedia.mobileLarge`
+    text-align: center;
+    margin: 1.2rem;
+  `}
 `;
 
 export const ProofLogo = styled.div`

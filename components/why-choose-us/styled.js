@@ -1,10 +1,21 @@
 import styled from "styled-components";
-import { spacing, font, color } from "../designSystem";
+import { spacing, font, color, maxMedia } from "../designSystem";
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-color: ${color.offwhiteBG};
   padding: 0 ${spacing.XXXL}rem;
+
+  ${maxMedia.mobileLarge`
+    padding: 0;
+  `}
+  ${maxMedia.tablet`
+    padding: 0;
+  `}
+  ${maxMedia.tabletLarge`
+    padding: 0;
+   `}
 `;
 
 export const TitleItem = styled.div`
@@ -13,14 +24,34 @@ export const TitleItem = styled.div`
   align-self: center;
   max-width: ${spacing.XXXXXL}rem;
   margin: ${spacing.M}rem 0;
+  ${maxMedia.mobileLarge`
+    text-align: center;
+    margin: 0 auto;
+    padding: 3.2rem 0;
+  `}
+  ${maxMedia.tabletLarge`
+    display: inline-block;
+   `}
 `;
 
 export const ParagraphItem = styled.div`
   /* margin-right: 9rem; */
-  width: 50rem;
+  /* width: 50rem; */
   align-self: center;
   font-size: ${font.M}rem;
   color: ${color.primaryTextCol};
+
+  ${maxMedia.mobileLarge`
+    text-align: center;
+     p {
+        margin: 3.2rem;
+     }
+  `}
+
+  ${maxMedia.tablet`
+    margin: 1.5rem;
+    text-align: left;
+  `}
 `;
 
 export const IconItem = styled.div``;
@@ -32,6 +63,15 @@ export const Wrapper = styled.div`
   justify-content: space-around;
   padding: ${spacing.L}rem 0;
   justify-content: flex-start;
+  ${maxMedia.mobileLarge`
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding-top: 0;
+  `}
+
+  ${maxMedia.tablet`
+    padding: 1rem;
+  `}
 `;
 
 export const LastWrapper = styled.div`
@@ -78,6 +118,10 @@ export const Title = styled.div`
   display: flex;
   flex-direction: column;
   align-self: center;
+
+  ${maxMedia.mobileLarge`
+    text-align: center;
+  `}
 `;
 
 export const Row = styled.div`
@@ -90,7 +134,22 @@ export const Column = styled.div`
   flex-direction: row;
   img {
     max-width: 50%;
+    ${maxMedia.mobileLarge`
+    max-width: 100%;
+    margin-bottom: 3.2rem;
+  `}
+
+    ${maxMedia.tablet`
+    max-width: 100%;
+  `}
   }
+
+  ${maxMedia.tablet`
+    justify-content: center;
+  `}
+  ${maxMedia.tabletLarge`
+    justify-content: center;
+  `}
 `;
 
 export const MiddleColumn = styled.div`
@@ -99,5 +158,19 @@ export const MiddleColumn = styled.div`
   justify-content: flex-end;
   img {
     max-width: 50%;
+    ${maxMedia.mobileLarge`
+      max-width: 100%;
+    `}
+
+    ${maxMedia.tablet`
+      max-width: 100%;
+    `}
   }
+
+  ${maxMedia.tablet`
+    justify-content: center;
+  `}
+  ${maxMedia.tabletLarge`
+    justify-content: center;
+  `}
 `;

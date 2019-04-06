@@ -1,3 +1,5 @@
+import styled, { css } from "styled-components";
+
 export const spacing = {
   XXXXXS: 0.4,
   XXXS: 0.8,
@@ -43,3 +45,38 @@ export const color = {
   heroSubTitleText: "#fff",
   altBtnBG: "#fff"
 };
+
+const maxBreakpoints = {
+  mobile: 360,
+  mobileLarge: 504,
+  tablet: 755,
+  tabletLarge: 1007,
+  desktop: 1259
+};
+
+const minBreakpoints = {
+  mobile: 361,
+  mobileLarge: 505,
+  tablet: 756,
+  tabletLarge: 1008,
+  desktop: 1260,
+  desktopLarge: 1512
+};
+
+export const maxMedia = Object.keys(maxBreakpoints).reduce((acc, label) => {
+  acc[label] = (...args) => css`
+    @media (max-width: ${maxBreakpoints[label] / 16}em) {
+      ${css(...args)}
+    }
+  `;
+  return acc;
+}, {});
+
+export const minMedia = Object.keys(minBreakpoints).reduce((acc, label) => {
+  acc[label] = (...args) => css`
+    @media (min-width: ${minBreakpoints[label] / 16}em) {
+      ${css(...args)}
+    }
+  `;
+  return acc;
+}, {});
