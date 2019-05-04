@@ -8,7 +8,6 @@ import {
 } from "./styled";
 import BurgerMenu from "./burger-menu";
 const NavBar = props => {
-  // console.log("my props", props.handleStateChange);
   return (
     <>
       <NavBarContainer isSticky={props.isSticky}>

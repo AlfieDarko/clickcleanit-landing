@@ -3,7 +3,8 @@ import App, { Container } from "next/app";
 import Head from "next/head";
 import React from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import withReduxStore from "../lib/with-redux-store";
+import { Provider } from "react-redux";
 import {
   faClock,
   faClipboardCheck,
@@ -21,11 +22,12 @@ library.add(
   faGlasses,
   faStopwatch
 );
-export default class MyApp extends App {
+
+class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = {};
 
-    if (Component.getInitialProps) {
+    if (Component && Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx);
     }
 
@@ -33,15 +35,19 @@ export default class MyApp extends App {
   }
 
   render() {
-    const { Component, pageProps } = this.props;
-
+    const { Component, pageProps, reduxStore } = this.props;
+    // console.log(reduxStore);
     return (
       <Container>
-        <Head>
-          <title>ClickCleanit v2</title>
-        </Head>
-        <Component {...pageProps} />
+        <Provider store={reduxStore}>
+          <Head>
+            <title>ClickCleanit v2</title>
+          </Head>
+          <Component {...pageProps} />
+        </Provider>
       </Container>
     );
   }
 }
+
+export default withReduxStore(MyApp);

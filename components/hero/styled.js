@@ -15,6 +15,10 @@ export const OuterContainer = styled.div`
   ${maxMedia.tablet`
     padding: 0;
   `}
+
+   ${maxMedia.tabletLarge`
+    padding: 0;
+  `}
 `;
 
 export const Container = styled.div`
@@ -113,8 +117,8 @@ export const HeroSubTitle = styled.div`
 
 export const OfferBox = styled.span`
   border-radius: 1rem;
-  color: #fff;
-  /* background-color: #2e4057; */
+  color: ${props => props.selected ? `${color.primaryCol}` : "white"};
+  background: ${props => props.selected ? "white" : "inherit"};
   font-size: ${font.M}rem;
   padding: ${spacing.S}rem;
   border: 2px solid #fff;
@@ -123,6 +127,7 @@ export const OfferBox = styled.span`
   :hover {
     background: white;
     color: ${color.primaryCol};
+    cursor: pointer;
   }
 `;
 

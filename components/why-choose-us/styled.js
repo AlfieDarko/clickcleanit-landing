@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { spacing, font, color, maxMedia } from "../designSystem";
+import { spacing, font, color, maxMedia, minMedia } from "../designSystem";
 
 export const Container = styled.div`
   display: flex;
@@ -31,7 +31,10 @@ export const TitleItem = styled.div`
   `}
   ${maxMedia.tabletLarge`
     display: inline-block;
-   `}
+  `}
+  ${minMedia.desktopLarge`
+    text-align: left;
+  `}
 `;
 
 export const ParagraphItem = styled.div`
@@ -50,6 +53,64 @@ export const ParagraphItem = styled.div`
 
   ${maxMedia.tablet`
     margin: 1.5rem;
+    text-align: left;
+  `}
+  ${maxMedia.tabletLarge`
+    text-align: left;
+    margin-right: 6rem;
+  `}
+  ${minMedia.desktopLarge`
+    text-align: left;
+  `}
+`;
+
+export const LastParagraphItem = styled.div`
+  /* margin-right: 9rem; */
+  /* width: 50rem; */
+  align-self: center;
+  font-size: ${font.M}rem;
+  color: ${color.primaryTextCol};
+
+  ${maxMedia.mobileLarge`
+    text-align: center;
+     p {
+        margin: 3.2rem;
+     }
+  `}
+
+  ${maxMedia.tablet`
+    margin: 1.5rem;
+    text-align: left;
+  `}
+  ${maxMedia.tabletLarge`
+    text-align: center;
+    margin-right: 6rem;
+  `}
+`;
+
+export const ParagraphItemMid = styled.div`
+  /* margin-right: 9rem; */
+  /* width: 50rem; */
+  align-self: center;
+  font-size: ${font.M}rem;
+  color: ${color.primaryTextCol};
+
+  ${maxMedia.mobileLarge`
+    text-align: center;
+     p {
+        margin: 3.2rem;
+     }
+  `}
+
+  ${maxMedia.tablet`
+    margin: 1.5rem;
+    text-align: left;
+  `}
+  ${maxMedia.tabletLarge`
+    margin-left: 6rem;
+    text-align: left;  
+  `}
+  ${minMedia.desktopLarge`
     text-align: left;
   `}
 `;
@@ -82,23 +143,25 @@ export const LastWrapper = styled.div`
   text-align: center;
 `;
 export const SexyLinebreak = styled.span`
-  display: block;
-  border: none;
-  color: white;
-  height: 1px;
-  background: black;
-  background: -webkit-gradient(
-    radial,
-    50% 50%,
-    0,
-    50% 50%,
-    350,
-    from(#999999),
-    to(#f7f9f9)
-  );
-  p {
-    text-align: center;
-  }
+  ${minMedia.desktop`
+    display: block;
+    border: none;
+    color: white;
+    height: 1px;
+    background: black;
+    background: -webkit-gradient(
+      radial,
+      50% 50%,
+      0,
+      50% 50%,
+      350,
+      from(#999999),
+      to(#f7f9f9)
+    );
+    p {
+      text-align: center;
+    }
+  `}
 `;
 
 export const SubTitle = styled.div`
@@ -137,6 +200,7 @@ export const Column = styled.div`
     ${maxMedia.mobileLarge`
     max-width: 100%;
     margin-bottom: 3.2rem;
+
   `}
 
     ${maxMedia.tablet`
@@ -148,8 +212,8 @@ export const Column = styled.div`
     justify-content: center;
   `}
   ${maxMedia.tabletLarge`
-    justify-content: center;
-  `}
+    justify-content: left;
+`}
 `;
 
 export const MiddleColumn = styled.div`

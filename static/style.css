@@ -29,20 +29,26 @@ html {
   }
 }
 
-@media only screen and (max-width: 1260px) {
+@media only screen and (max-width: 1279px) {
+  html {
+    font-size: 56.25%; /* Now 10px = 1rem! */
+  }
+}
+
+@media only screen and (min-width: 1280px) {
   html {
     font-size: 62.5%; /* Now 10px = 1rem! */
   }
 }
 
-@media only screen and (min-width: 1512px) {
-  html {
-    font-size: 75%; /* Now 10px = 1rem! */
+@media only screen and (min-width: 1280px) {
+  .bm-burger-button {
+    display: none; /* Now 10px = 1rem! */
   }
 }
 
 body {
-  max-width: 1920px;
+  /* max-width: 1920px; */
   margin: 0 auto;
   font-size: 16px;
   /* px fallback */

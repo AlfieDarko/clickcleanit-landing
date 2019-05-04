@@ -16,6 +16,9 @@ export const Container = styled.div`
   ${maxMedia.tablet`
     padding: 0;
    `}
+    ${maxMedia.tabletLarge`
+    padding: 0;
+   `}
 `;
 
 export const TitleItem = styled.div`

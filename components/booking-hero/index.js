@@ -9,30 +9,14 @@ import {
   BookingFormContainer,
   Title
 } from "./styled";
-
+import OfferBoxComponent from "./offerbox";
 const BookUsHero = () => {
   return (
     <BookingContainer>
       <Title>
         <b>Join our list of happy customers by booking your clean today!</b>
       </Title>
-      <OfferBoxRow>
-        <OfferBoxContent>
-          <OfferBox>Just Once</OfferBox>
-        </OfferBoxContent>
-        <OfferBoxContent>
-          <OfferBox>Monthly</OfferBox>
-          <OfferBoxOffer>5% Off</OfferBoxOffer>
-        </OfferBoxContent>
-        <OfferBoxContent>
-          <OfferBox>Bi-Weekly</OfferBox>
-          <OfferBoxOffer>10% Off</OfferBoxOffer>
-        </OfferBoxContent>
-        <OfferBoxContent>
-          <OfferBox>Weekly</OfferBox>
-          <OfferBoxOffer>15% Off</OfferBoxOffer>
-        </OfferBoxContent>
-      </OfferBoxRow>
+      <OfferBoxComponent />
       <BookingFormContainer>
         <BookingForm />
       </BookingFormContainer>

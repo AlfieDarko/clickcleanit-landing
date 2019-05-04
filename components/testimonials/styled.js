@@ -38,6 +38,10 @@ export const TestimonialsContainer = styled.div`
   ${maxMedia.tablet`
     padding: 0;
   `}
+
+  ${maxMedia.tabletLarge`
+    padding: 0;
+  `}
 `;
 
 export const Title = styled.div`

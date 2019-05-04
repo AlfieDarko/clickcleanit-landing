@@ -10,7 +10,9 @@ import {
   SubTitle,
   Title,
   Column,
-  MiddleColumn
+  MiddleColumn,
+  ParagraphItemMid,
+  LastParagraphItem
 } from "./styled";
 import CTA from "../buttons/CTA";
 const WhyChooseUs = () => {
@@ -22,13 +24,15 @@ const WhyChooseUs = () => {
       </TitleContainer>
       <Wrapper>
         <Column>
-          <img src="/static/images/chilling.jpg" />
+          <img src="/static/stock/chilling.jpg" />
         </Column>
 
         <ParagraphItem>
           <TitleItem>Save your energy for other things</TitleItem>
           <p>
-            Modern day living is <b>hard</b>. It's like there are a million things we need to do but there's simply not enough time. Things can get really exhausting.
+            Modern day living is <b>hard</b>. It's like there are a million
+            things we need to do but there's simply not enough time. Things can
+            get really exhausting.
           </p>
           <p>
             We want to help you get the time to relax and concentrate on the
@@ -40,7 +44,7 @@ const WhyChooseUs = () => {
       <SexyLinebreak />
 
       <Wrapper>
-        <ParagraphItem>
+        <ParagraphItemMid>
           <TitleItem>Get your time-freedom back</TitleItem>
           <p>
             Why spend your time cleaning when you can hire us to do twice as
@@ -50,16 +54,16 @@ const WhyChooseUs = () => {
             By choosing ClickCleanit, we leave you with more time, more energy,
             and you get the joy of returning to an immaculate & tidy home again.
           </p>
-        </ParagraphItem>
+        </ParagraphItemMid>
         <MiddleColumn>
-          <img src="/static/images/couples.jpg" />
+          <img src="/static/stock/couples.jpg" />
         </MiddleColumn>
       </Wrapper>
       <SexyLinebreak />
 
       <Wrapper>
         <Column>
-          <img src="/static/images/happy-man.jpg" />
+          <img src="/static/stock/happy-man.jpg" />
         </Column>
         <ParagraphItem>
           <TitleItem>Clean Home, Happy Heart</TitleItem>
@@ -70,25 +74,28 @@ const WhyChooseUs = () => {
           </p>
 
           <p>
-            By choosing us, we will get our hands dirty for you. Regain that brand new feeling when you first moved in. Let us help make your home a source of happiness again!
+            By choosing us, we will get our hands dirty for you. Regain that
+            brand new feeling when you first moved in. Let us help make your
+            home a source of happiness again!
           </p>
         </ParagraphItem>
       </Wrapper>
       <SexyLinebreak />
 
       <LastWrapper>
-        <ParagraphItem>
+        <LastParagraphItem>
           <p>
             Come home to a house that’s been tidied, polished and smells
-            absolutely wonderful. Book our house cleaning services and make your
-            life simpler and easier.
+            absolutely wonderful. <br />
+            Book our house cleaning services and make your life simpler and
+            easier.
           </p>
 
           <div>
             <b>You work too hard, you deserve this.</b>
           </div>
           <CTA>Book Now!</CTA>
-        </ParagraphItem>
+        </LastParagraphItem>
       </LastWrapper>
     </Container>
   );

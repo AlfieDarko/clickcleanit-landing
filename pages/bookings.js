@@ -3,12 +3,18 @@ import NavBar from "../components/navbar";
 import ScrollBtn from "../components/buttons/BackToTop";
 import Sticky from "react-stickynode";
 import BurgerMenu from "../components/navbar/burger-menu";
+import BookingsPage from "../components/bookings-page";
 import { connect } from "react-redux";
-import LandingPage from "../components/landing-page";
+import { Provider } from "react-redux";
 
-class Index extends React.Component {
+// import "../static/semantic/dist/semantic.css";
+class Bookings extends React.Component {
   static getInitialProps({ store, req }) {
     return {};
+  }
+
+  componentDidMount() {
+    const { dispatch } = this.props;
   }
 
   render() {
@@ -26,13 +32,12 @@ class Index extends React.Component {
           }}
         </Sticky>
         <ScrollBtn />
-
         <div id="page-wrap">
-          <LandingPage />
+          <BookingsPage />
         </div>
       </div>
     );
   }
 }
 
-export default connect()(Index);
+export default connect()(Bookings);

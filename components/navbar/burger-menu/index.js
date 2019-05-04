@@ -7,8 +7,20 @@ export const BurgerMenu = props => {
       <a id="home" className="menu-item" href="/">
         Home
       </a>
-      <a id="about" className="menu-item" href="/about">
+      <p id="services" className="menu-item">
         About
+      </p>
+      <a id="services" className="menu-item" href="/services/deepclean">
+        Deep Clean
+      </a>
+      <a id="services" className="menu-item" href="/services/domestic">
+        Domestic
+      </a>
+      <a id="services" className="menu-item" href="/services/endoftenancy">
+        End Of Tenancy
+      </a>
+      <a id="services" className="menu-item" href="/services/one-off">
+        One-Off Clean
       </a>
       <a id="contact" className="menu-item" href="/contact">
         Contact

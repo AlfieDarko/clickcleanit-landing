@@ -51,7 +51,7 @@ const maxBreakpoints = {
   mobileLarge: 504,
   tablet: 755,
   tabletLarge: 1007,
-  desktop: 1259
+  desktop: 1279
 };
 
 const minBreakpoints = {
@@ -59,7 +59,7 @@ const minBreakpoints = {
   mobileLarge: 505,
   tablet: 756,
   tabletLarge: 1008,
-  desktop: 1260,
+  desktop: 1280,
   desktopLarge: 1512
 };
 
