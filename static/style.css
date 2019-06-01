@@ -133,3 +133,7 @@ body {
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
+
+input {
+  padding: 1rem !important;
+}

@@ -18,6 +18,7 @@ const initialState = {
       cleanFrequency: "",
       numberOfBedrooms: "",
       numberOfBathrooms: "",
+      startDate: null,
       hours: 0,
       typeOfClean: "",
       extraServices: [],
@@ -33,11 +34,12 @@ export const actionTypes = {
   SELECT_CLEAN_TYPE: "SELECT_CLEAN_TYPE",
   SELECT_BEDROOMS: "SELECT_BEDROOMS",
   SELECT_BATHROOMS: "SELECT_BATHROOMS",
+  SELECT_STARTDATE: "SELECT_STARTDATE",
   ENTER_NAME: "ENTER_NAME",
   ENTER_EMAIL: "ENTER_EMAIL",
   ENTER_MOBILE: "ENTER_MOBILE",
   ENTER_ADDRESS: "ENTER_ADDRESS",
-  ENTER_PROMO: "ENTER_PROMO",
+  ENTER_PROMO: "ENTER_PROMO"
 };
 
 // REDUCERS
@@ -83,51 +85,50 @@ export const reducer = (state = initialState, action) => {
           }
         }
       };
-    case actionTypes.ENTER_FULLNAME:
-    return {
-      user: {
-        ...state.user,
-        fullName: action.fullName,
-        service: {
-          ...state.user.service,
+    case actionTypes.SELECT_STARTDATE:
+      return {
+        user: {
+          ...state.user,
+          service: {
+            ...state.user.service,
+            startDate: action.startDate
+          }
         }
-      }
-    };
+      };
+    case actionTypes.ENTER_FULLNAME:
+      return {
+        user: {
+          ...state.user,
+          fullName: action.fullName,
+          service: {
+            ...state.user.service
+          }
+        }
+      };
     case actionTypes.ENTER_MOBILE:
       return {
         user: {
           ...state.user,
           mobile: action.mobile,
           service: {
-            ...state.user.service,
+            ...state.user.service
           }
         }
       };
     case actionTypes.ENTER_ADDRESS:
-    return {
-      user: {
-        ...state.user,
-        address: action.address,
-        service: {
-          ...state.user.service,
+      return {
+        user: {
+          ...state.user,
+          address: action.address,
+          service: {
+            ...state.user.service
+          }
         }
-      }
-    };
+      };
     default:
       return state;
   }
 };
-
-
-
-
-
-
-
-
-
-
-
 
 // ACTIONS
 export const selectCleanFrequency = cleanFrequency => {
@@ -144,6 +145,10 @@ export const selectBedrooms = numberOfBedrooms => {
 
 export const selectBathrooms = numberOfBathrooms => {
   return { type: actionTypes.SELECT_BATHROOMS, numberOfBathrooms };
+};
+
+export const selectStartDate = startDate => {
+  return { type: actionTypes.SELECT_STARTDATE, startDate };
 };
 
 export function initializeStore(initialState = initialState) {

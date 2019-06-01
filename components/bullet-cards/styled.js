@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { spacing, font, color, maxMedia } from "../designSystem";
+import { spacing, font, color, maxMedia } from "components/designSystem";
 
 // background: #7b9a9a;
 // color: #d7e1e1;

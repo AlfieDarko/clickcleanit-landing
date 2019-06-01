@@ -22,12 +22,16 @@ export const BookingContainer = styled.div`
 export const OfferBox = styled.span`
   border-radius: 1rem;
   color: white;
-  background-color: ${props => props.selected ? `#00f99fa9` : `${color.primaryCol}`};
+  background-color: ${props =>
+    props.selected ? `#00f99fa9` : `${color.primaryCol}`};
   font-size: ${font.M}rem;
-  padding: ${spacing.M}rem;
+  padding: ${props =>
+    props.noWidthPadding ? `${spacing.M}rem 0` : `${spacing.M}rem`};
+
   border: 2px solid black;
   transition: all 0.3s ease 0s;
   border: none;
+  display: ${props => (props.displayBlock ? "block" : "initial")};
   :hover {
     background: #00f99fa9;
     color: #ffffffc9;

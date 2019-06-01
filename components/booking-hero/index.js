@@ -2,10 +2,6 @@ import React from "react";
 import BookingForm from "../hero-booking-form";
 import {
   BookingContainer,
-  OfferBox,
-  OfferBoxOffer,
-  OfferBoxRow,
-  OfferBoxContent,
   BookingFormContainer,
   Title
 } from "./styled";

@@ -22,6 +22,7 @@ library.add(
   faGlasses,
   faStopwatch
 );
+import "react-dates/initialize";
 
 class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {

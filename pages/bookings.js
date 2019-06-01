@@ -5,9 +5,8 @@ import Sticky from "react-stickynode";
 import BurgerMenu from "../components/navbar/burger-menu";
 import BookingsPage from "../components/bookings-page";
 import { connect } from "react-redux";
-import { Provider } from "react-redux";
 
-// import "../static/semantic/dist/semantic.css";
+import "../static/semantic/dist/semantic.css";
 class Bookings extends React.Component {
   static getInitialProps({ store, req }) {
     return {};
