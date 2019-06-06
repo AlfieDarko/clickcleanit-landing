@@ -53,11 +53,10 @@ export const ParagraphItem = styled.div`
 
   ${maxMedia.tablet`
     margin: 1.5rem;
-    text-align: left;
+    text-align: center;
   `}
   ${maxMedia.tabletLarge`
-    text-align: left;
-    margin-right: 6rem;
+    text-align: center;
   `}
   ${minMedia.desktopLarge`
     text-align: left;
@@ -80,11 +79,10 @@ export const LastParagraphItem = styled.div`
 
   ${maxMedia.tablet`
     margin: 1.5rem;
-    text-align: left;
+    text-align: center;
   `}
   ${maxMedia.tabletLarge`
     text-align: center;
-    margin-right: 6rem;
   `}
 `;
 
@@ -104,11 +102,10 @@ export const ParagraphItemMid = styled.div`
 
   ${maxMedia.tablet`
     margin: 1.5rem;
-    text-align: left;
+    text-align: center;
   `}
   ${maxMedia.tabletLarge`
-    margin-left: 6rem;
-    text-align: left;  
+    text-align: center;  
   `}
   ${minMedia.desktopLarge`
     text-align: left;

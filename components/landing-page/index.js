@@ -5,7 +5,7 @@ import WhyChooseUs from "../why-choose-us/index";
 import BulletCards from "../bullet-cards";
 import Testimonials from "../testimonials";
 import BookUsHero from "../booking-hero";
-
+import Footer from "../footer";
 const LandingPage = props => {
   return (
     <>
@@ -15,6 +15,7 @@ const LandingPage = props => {
       <BulletCards />
       <Testimonials />
       <BookUsHero />
+      <Footer />
     </>
   );
 };
